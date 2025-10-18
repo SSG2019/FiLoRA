@@ -1,0 +1,37 @@
+D:\anaconda\envs\AOD-LoRA\lib\site-packages\transformers\convert_slow_tokenizer.py:564: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at E:/model/DeBERTa/DeBERTa_v3_base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Total parameters to train: 75,266
+Parameters in LoRA .R: 73,728
+Parameters in classifier: 1,538
+[Epoch 1] MRPC Accuracy = 0.8284
+[Epoch 2] MRPC Accuracy = 0.8995
+[Epoch 3] MRPC Accuracy = 0.8701
+[Epoch 4] MRPC Accuracy = 0.8995
+[Epoch 5] MRPC Accuracy = 0.8995
+[Epoch 6] MRPC Accuracy = 0.8824
+[Epoch 7] MRPC Accuracy = 0.8971
+[Epoch 8] MRPC Accuracy = 0.8995
+[Epoch 9] MRPC Accuracy = 0.9093
+[Epoch 10] MRPC Accuracy = 0.8995
+[Epoch 11] MRPC Accuracy = 0.8848
+[Epoch 12] MRPC Accuracy = 0.8995
+[Epoch 13] MRPC Accuracy = 0.9069
+[Epoch 14] MRPC Accuracy = 0.9118
+[Epoch 15] MRPC Accuracy = 0.9093
+[Epoch 16] MRPC Accuracy = 0.8946
+[Epoch 17] MRPC Accuracy = 0.9093
+[Epoch 18] MRPC Accuracy = 0.8946
+[Epoch 19] MRPC Accuracy = 0.9044
+[Epoch 20] MRPC Accuracy = 0.9069
+[Epoch 21] MRPC Accuracy = 0.9069
+[Epoch 22] MRPC Accuracy = 0.9093
+[Epoch 23] MRPC Accuracy = 0.8922
+[Epoch 24] MRPC Accuracy = 0.9020
+[Epoch 25] MRPC Accuracy = 0.9044
+[Epoch 26] MRPC Accuracy = 0.8971
+[Epoch 27] MRPC Accuracy = 0.8946
+[Epoch 28] MRPC Accuracy = 0.8922
+[Epoch 29] MRPC Accuracy = 0.8922
+[Epoch 30] MRPC Accuracy = 0.8922

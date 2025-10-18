@@ -1,0 +1,17 @@
+D:\anaconda\envs\AOD-LoRA\lib\site-packages\transformers\convert_slow_tokenizer.py:564: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at E:/model/DeBERTa/DeBERTa_v3_base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Total parameters to train: 75,266
+Parameters in LoRA .R: 73,728
+Parameters in classifier: 1,538
+[Epoch 1] QNLI Accuracy = 0.8977
+[Epoch 2] QNLI Accuracy = 0.9184
+[Epoch 3] QNLI Accuracy = 0.9070
+[Epoch 4] QNLI Accuracy = 0.9273
+[Epoch 5] QNLI Accuracy = 0.9325
+[Epoch 6] QNLI Accuracy = 0.9389
+[Epoch 7] QNLI Accuracy = 0.9336
+[Epoch 8] QNLI Accuracy = 0.9352
+[Epoch 9] QNLI Accuracy = 0.9356
+[Epoch 10] QNLI Accuracy = 0.9350

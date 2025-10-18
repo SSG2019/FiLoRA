@@ -1,0 +1,32 @@
+D:\anaconda\envs\AOD-LoRA\lib\site-packages\transformers\convert_slow_tokenizer.py:564: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at E:/model/DeBERTa/DeBERTa_v3_base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Total parameters to train: 75,266
+Parameters in LoRA .R: 73,728
+Parameters in classifier: 1,538
+[Epoch 1] SST-2 Accuracy = 0.9346
+[Epoch 2] SST-2 Accuracy = 0.9450
+[Epoch 3] SST-2 Accuracy = 0.9404
+[Epoch 4] SST-2 Accuracy = 0.9472
+[Epoch 5] SST-2 Accuracy = 0.9541
+[Epoch 6] SST-2 Accuracy = 0.9472
+[Epoch 7] SST-2 Accuracy = 0.9507
+[Epoch 8] SST-2 Accuracy = 0.9484
+[Epoch 9] SST-2 Accuracy = 0.9564
+[Epoch 10] SST-2 Accuracy = 0.9587
+[Epoch 11] SST-2 Accuracy = 0.9553
+[Epoch 12] SST-2 Accuracy = 0.9587
+[Epoch 13] SST-2 Accuracy = 0.9564
+[Epoch 14] SST-2 Accuracy = 0.9564
+[Epoch 15] SST-2 Accuracy = 0.9541
+[Epoch 16] SST-2 Accuracy = 0.9587
+[Epoch 17] SST-2 Accuracy = 0.9587
+[Epoch 18] SST-2 Accuracy = 0.9553
+[Epoch 19] SST-2 Accuracy = 0.9541
+[Epoch 20] SST-2 Accuracy = 0.9507
+[Epoch 21] SST-2 Accuracy = 0.9518
+[Epoch 22] SST-2 Accuracy = 0.9530
+[Epoch 23] SST-2 Accuracy = 0.9541
+[Epoch 24] SST-2 Accuracy = 0.9541
+[Epoch 25] SST-2 Accuracy = 0.9541

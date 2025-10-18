@@ -1,0 +1,32 @@
+D:\anaconda\envs\AOD-LoRA\lib\site-packages\transformers\convert_slow_tokenizer.py:564: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at E:/model/DeBERTa/DeBERTa_v3_base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Total parameters to train: 74,497
+Parameters in LoRA .R: 73,728
+Parameters in classifier: 769
+[Epoch 1] STS-B pearson = 0.8923 spearman = 0.8942 avg = 0.8932
+[Epoch 2] STS-B pearson = 0.9046 spearman = 0.9056 avg = 0.9051
+[Epoch 3] STS-B pearson = 0.9109 spearman = 0.9113 avg = 0.9111
+[Epoch 4] STS-B pearson = 0.9126 spearman = 0.9130 avg = 0.9128
+[Epoch 5] STS-B pearson = 0.9155 spearman = 0.9148 avg = 0.9151
+[Epoch 6] STS-B pearson = 0.9159 spearman = 0.9154 avg = 0.9157
+[Epoch 7] STS-B pearson = 0.9145 spearman = 0.9149 avg = 0.9147
+[Epoch 8] STS-B pearson = 0.9151 spearman = 0.9160 avg = 0.9155
+[Epoch 9] STS-B pearson = 0.9165 spearman = 0.9164 avg = 0.9164
+[Epoch 10] STS-B pearson = 0.9156 spearman = 0.9156 avg = 0.9156
+[Epoch 11] STS-B pearson = 0.9170 spearman = 0.9167 avg = 0.9168
+[Epoch 12] STS-B pearson = 0.9179 spearman = 0.9172 avg = 0.9175
+[Epoch 13] STS-B pearson = 0.9176 spearman = 0.9174 avg = 0.9175
+[Epoch 14] STS-B pearson = 0.9175 spearman = 0.9164 avg = 0.9169
+[Epoch 15] STS-B pearson = 0.9190 spearman = 0.9181 avg = 0.9185
+[Epoch 16] STS-B pearson = 0.9175 spearman = 0.9164 avg = 0.9169
+[Epoch 17] STS-B pearson = 0.9183 spearman = 0.9172 avg = 0.9177
+[Epoch 18] STS-B pearson = 0.9185 spearman = 0.9171 avg = 0.9178
+[Epoch 19] STS-B pearson = 0.9180 spearman = 0.9165 avg = 0.9173
+[Epoch 20] STS-B pearson = 0.9182 spearman = 0.9170 avg = 0.9176
+[Epoch 21] STS-B pearson = 0.9178 spearman = 0.9166 avg = 0.9172
+[Epoch 22] STS-B pearson = 0.9180 spearman = 0.9169 avg = 0.9175
+[Epoch 23] STS-B pearson = 0.9181 spearman = 0.9170 avg = 0.9176
+[Epoch 24] STS-B pearson = 0.9180 spearman = 0.9170 avg = 0.9175
+[Epoch 25] STS-B pearson = 0.9181 spearman = 0.9170 avg = 0.9175

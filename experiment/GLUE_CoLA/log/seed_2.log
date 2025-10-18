@@ -1,0 +1,32 @@
+D:\anaconda\envs\AOD-LoRA\lib\site-packages\transformers\convert_slow_tokenizer.py:564: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at E:/model/DeBERTa/DeBERTa_v3_base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Total parameters to train: 75,266
+Parameters in LoRA .R: 73,728
+Parameters in classifier: 1,538
+[Epoch 1] CoLA MCC = 0.5908
+[Epoch 2] CoLA MCC = 0.6356
+[Epoch 3] CoLA MCC = 0.6819
+[Epoch 4] CoLA MCC = 0.6741
+[Epoch 5] CoLA MCC = 0.6775
+[Epoch 6] CoLA MCC = 0.6728
+[Epoch 7] CoLA MCC = 0.6824
+[Epoch 8] CoLA MCC = 0.6967
+[Epoch 9] CoLA MCC = 0.6933
+[Epoch 10] CoLA MCC = 0.6896
+[Epoch 11] CoLA MCC = 0.6846
+[Epoch 12] CoLA MCC = 0.6822
+[Epoch 13] CoLA MCC = 0.6726
+[Epoch 14] CoLA MCC = 0.6837
+[Epoch 15] CoLA MCC = 0.6662
+[Epoch 16] CoLA MCC = 0.6664
+[Epoch 17] CoLA MCC = 0.6948
+[Epoch 18] CoLA MCC = 0.6864
+[Epoch 19] CoLA MCC = 0.6738
+[Epoch 20] CoLA MCC = 0.6740
+[Epoch 21] CoLA MCC = 0.6615
+[Epoch 22] CoLA MCC = 0.6666
+[Epoch 23] CoLA MCC = 0.6743
+[Epoch 24] CoLA MCC = 0.6718
+[Epoch 25] CoLA MCC = 0.6718
