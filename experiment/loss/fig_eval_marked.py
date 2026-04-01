@@ -36,7 +36,7 @@ bars1 = ax.bar(index - bar_width, plot_values['Random'], bar_width, label='Rando
 bars2 = ax.bar(index, plot_values['FiLoRA'], bar_width, label='FiLoRA', color='#F7AA58')
 bars3 = ax.bar(index + bar_width, plot_values['LoRA_XS'], bar_width, label='LoRA_XS', color='#E76254')
 
-ax.set_xlabel('Epoch', fontsize=12)
+ax.set_xlabel('Epoch', fontsize=12, color='red')
 ax.set_ylabel('CoLA Mcc (%)', fontsize=12)
 
 ax.set_xticks(index)
@@ -48,6 +48,6 @@ ax.legend(fontsize=15)
 
 plt.tight_layout()
 
-plt.savefig('CoLA_MCC.svg', format='svg')
+plt.savefig('CoLA_MCC_marked_red.svg', format='svg')
 
 plt.show()

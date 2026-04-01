@@ -93,7 +93,7 @@ for label, df in data.items():
                alpha=0.9
                )
 
-ax.set_xlabel('Global Step', fontsize=12)
+ax.set_xlabel('Global Step', fontsize=12, color='red')
 ax.set_ylabel('Training Loss', fontsize=12)
 ax.set_ylim(0.10, 0.60)
 
@@ -118,5 +118,5 @@ axins.tick_params(axis='y', labelsize=10)
 axins.grid(True, linestyle='--', alpha=0.4)
 
 plt.tight_layout()
-plt.savefig('CoLA_loss.svg', format='svg')
+plt.savefig('CoLA_loss_marked_red.svg', format='svg')
 plt.show()
