@@ -16,7 +16,7 @@ In the paper, FiLoRA achieves strong performance on six GLUE tasks while using o
 ## Method Illustration
 
 <p align="center">
-  <img src="./assets/filora_framework.png" alt="Comparison between Full Fine-tuning, LoRA, VeRA, LoRA-XS, and FiLoRA" width="100%">
+  <img src="filora_framework.png" alt="Comparison between Full Fine-tuning, LoRA, VeRA, LoRA-XS, and FiLoRA" width="100%">
 </p>
 
 The figure above summarizes the relationship between **Full Fine-tuning**, **LoRA**, **VeRA**, **LoRA-XS**, and **FiLoRA**. In contrast to methods that rely on random or weight-only low-rank subspaces, **FiLoRA first estimates Fisher-aligned subspaces using a K-FAC approximation, then fine-tunes only the compact core matrix** \(R\). This design keeps the trainable parameter count extremely small while preserving task-relevant adaptation capacity.
@@ -27,13 +27,13 @@ The current repository is organized as follows:
 
 ```text
 .
-├── experiment/          # experiment scripts, configs, or result-related utilities
-├── filoralib/           # core FiLoRA implementation
-├── filoralib.egg-info/  # package metadata generated during installation
-├── 1.pdf                # source figure used in the README
-├── pyproject.toml       # project/package configuration
-├── README.md            # project homepage
-└── score_flora.py       # evaluation / scoring script
+├── experiment/               # experiment scripts, configs, or result-related utilities
+├── filoralib/                # core FiLoRA implementation
+├── filoralib.egg-info/       # package metadata generated during installation
+├── filora_framework.png      # source figure used in the README
+├── pyproject.toml            # project/package configuration
+├── README.md                 # project homepage
+└── score_flora.py            # evaluation / scoring script
 ```
 
 > If you rename or relocate files later, please update this section accordingly.
@@ -49,33 +49,6 @@ pip install -e .
 
 If additional dependencies or environment requirements are needed for your experiments, please list them in `pyproject.toml` or provide a dedicated `requirements.txt` / environment file.
 
-## Getting Started
-
-A recommended way to use this repository is:
-
-1. install the package in editable mode;
-2. prepare the target downstream dataset;
-3. use the scripts under `experiment/` to reproduce training or evaluation;
-4. use `score_flora.py` for task-specific scoring or result aggregation if needed.
-
-Because experiment entrypoints may vary across tasks, please document the exact commands used in your final release.
-
-## Reproducing the Paper
-
-The paper evaluates FiLoRA on six GLUE tasks with **DeBERTaV3-base** as the backbone. For a polished public release, consider adding:
-
-- dataset preparation instructions;
-- training commands for each benchmark;
-- evaluation commands;
-- expected hyperparameters such as rank, learning rate, and data ratio for Fisher-statistics estimation;
-- checkpoints or result tables for quick verification.
-
-## Highlights
-
-- **Fisher-guided subspace construction** for parameter-efficient adaptation.
-- **K-FAC-based approximation** for practical second-order initialization.
-- **Frozen low-rank subspaces + trainable core matrix** for extreme parameter reduction.
-- **Strong GLUE performance** under a very small trainable-parameter budget.
 
 ## Citation
 
